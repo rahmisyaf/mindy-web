@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.home-style{
+  @apply grid place-content-center mt-25 ml-7 mr-7
+}
+.greeting{
+  @apply text-5xl text-center
+}
+
+.after-greeting{
+  @apply text-2xl text-center mt-10
+}
+
+.greeting-container{
+  @apply ml-40 mr-40
+}

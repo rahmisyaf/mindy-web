@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+
+body {
+  background-color: #ECF7FF;
+  font-family: 'Afacad', sans-serif;
+}
