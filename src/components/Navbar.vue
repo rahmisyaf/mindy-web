@@ -58,7 +58,7 @@
     <div class="navbar-mobile">
       <button @click="toggleMenu" class="focus:outline-none cursor-pointer">
         <img v-if="!isOpen" 
-        src="../assets/icons/hamburger.png" 
+        src="../../public/icons/hamburger.png" 
         class="hamburger"
         />
         <!-- <img v-else
