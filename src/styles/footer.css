@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.footer-box{
+  @apply bg-[#1B4965] justify-center mt-10 h-fit flex
+}
+
+.text-box{
+  @apply m-4 sm:m-6 lg:mx-20 lg:mt-5 text-white max-w-3xl
+}
+
+.affirmation{
+  @apply text-lg text-center text-white
+}
+
+.copyright{
+  @apply text-sm text-center text-white
+}

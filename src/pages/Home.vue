@@ -1,7 +1,9 @@
 <script setup>
   import '../styles/home.css'
   import Hero from '../components/home-com/Hero.vue';
-  import ReminderCard from '../components/home-com/ReminderCard.vue';  
+  import ReminderCard from '../components/home-com/ReminderCard.vue'; 
+  import TipsCard from '../components/home-com/TipsCard.vue'; 
+  import Footer from '../components/Footer.vue';
 </script>
 
 <template>
@@ -12,7 +14,7 @@
         <img src="/icons/home/clock.png" class="w-7 h-7 pt-10">
         <h1 class="daily-reminder-text">Daily Reminder</h1>
       </div>
-      <div class="flex flex-wrap justify-center w-fit gap-27">
+      <div class="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-27">
         <ReminderCard
         imgUrl="/icons/home/sun.png"
         time="Morning"
@@ -31,9 +33,30 @@
       </div>
     </div>
   </div>
-  <div class="tips-wrapper">
-    <div class="tips">
-      <h1 class="tip-text">Enjoy your day with these tips!</h1>
-    </div>
+  <div class="tips-card">
+    <!-- <div class="tips"> -->
+      <div class="">
+      <h1 class="tip-title">Enjoy your day with these tips!</h1>
+      </div>
+      <div class="tips">
+        <TipsCard
+        imgUrl="/icons/home/breathe.png"
+        tipText="Spend a few minutes today just breathing deeply."
+        />
+        <TipsCard
+        imgUrl="/icons/home/walk.png"
+        tipText="Step outside & let the fresh air clear your thoughts."
+        />
+        <TipsCard
+        imgUrl="/icons/home/love.png"
+        tipText="Write down 3 things you're grateful for."
+        />
+        <TipsCard
+        imgUrl="/icons/home/chat.png"
+        tipText="Reach out to a friend or loved one."
+        />
+      </div>
+    <!-- </div> -->
   </div>
+  <Footer/>
 </template>
