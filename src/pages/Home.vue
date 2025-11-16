@@ -3,11 +3,13 @@
   import Hero from '../components/home-com/Hero.vue';
   import ReminderCard from '../components/home-com/ReminderCard.vue'; 
   import TipsCard from '../components/home-com/TipsCard.vue'; 
+  import CTA from '../components/home-com/CTA.vue';
   import Footer from '../components/Footer.vue';
 </script>
 
 <template>
   <Hero/>
+  <!-- reminder -->
   <div class="reminder-card-wrapper">
     <div class="reminder-card">
       <div class="clock-daily">
@@ -33,9 +35,10 @@
       </div>
     </div>
   </div>
+  <!-- tips -->
   <div class="tips-card">
     <!-- <div class="tips"> -->
-      <div class="">
+      <div>
       <h1 class="tip-title">Enjoy your day with these tips!</h1>
       </div>
       <div class="tips">
@@ -57,6 +60,28 @@
         />
       </div>
     <!-- </div> -->
+  </div>
+  <!-- CTA -->
+  <div class="cta-wrapper">
+    <div>
+      <h1 class="tip-title">Try Out Mindy's features!</h1>
+    </div>
+    <div class="cta-layout">
+      <CTA
+      bgColor="#F3F0BE"
+      imgUrl="/icons/home/book.png"
+      title="Daily Journal"
+      desc="Express your thoughts and emotions in your private journal."
+      path="/journal">
+      </CTA>
+      <CTA
+      bgColor="#FBE6E6"
+      imgUrl="/icons/home/love2.png"
+      title="Mood Tracking"
+      desc="Get activity recommendation based on your current mood."
+      path="/mood-activity">
+      </CTA>
+    </div>
   </div>
   <Footer/>
 </template>

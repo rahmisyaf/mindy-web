@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import '../styles/navbar.css'
-  import {ref} from 'vue'
+  import {ref, computed} from 'vue'
+  import { useRoute } from 'vue-router'
 
   const isOpen = ref(false)
   
@@ -9,7 +10,9 @@
     path: string
   }
 
-  const activeItem = ref('Home')
+  const route = useRoute()
+
+  // const activeItem = ref('Home')
   const menuItems: MenuItem[] = [
     { name: 'Home', path: '/' },
     { name: 'Mood & Activity', path: '/mood-activity' },
@@ -18,6 +21,11 @@
     { name: 'About', path: '/about' },
   ]
 
+  const activeItem = computed(() => {
+    const foundItem = menuItems.find(item => item.path === route.path)
+
+    return foundItem ? foundItem.name : null
+  })
 
   const toggleMenu = () => {
     isOpen.value = !isOpen.value
@@ -27,10 +35,10 @@
     isOpen.value = false
   }
 
-  const setActive = (item:string) => {
-    activeItem.value = item
-    closeMenu()
-  }
+  // const setActive = (item:string) => {
+  //   activeItem.value = item
+  //   closeMenu()
+  // }
 </script>
 
 <template>
@@ -46,7 +54,6 @@
           v-for="item in menuItems"
           :key="item.name"
           :to="item.path"
-          @click="setActive(item.name)"
           :class="['rounded-full cursor-pointer transition', 
           activeItem === item.name ? 
           'bg-[#1A3A5F] text-white!' : 'text-gray-450 hover:bg-[#C5E4FA]']"
@@ -61,10 +68,6 @@
         src="../../public/icons/hamburger.png" 
         class="hamburger"
         />
-        <!-- <img v-else
-        src="../assets/icons/exit.png" 
-        class="close"
-        /> -->
       </button>
 
       <!--Logo mobile-->
@@ -86,7 +89,7 @@
 
           <router-link
             :to="item.path"
-            @click="() => {setActive(item.name); closeMenu();}"
+            @click="() => closeMenu()"
             :class="['w-3/4 text-center py-3 rounded-full mb-3 cursor-pointer transition',
             activeItem === item.name ? 'bg-[#1A3A5F] text-white' : 'text-gray-450 hover:bg-[#C5E4FA]'
           ]">

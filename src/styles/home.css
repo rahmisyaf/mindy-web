@@ -47,16 +47,16 @@
   @apply ml-5 mr-5 mt-4 mx-auto max-w-5xl lg:pl-45 sm:pl-5 pt-3
 }
 
+.tips-wrapper{
+  @apply flex border border-[#1B4965] rounded-xl bg-[#DBF0FF] max-w-lg basis-1/2
+}
+
 .tips{
-  @apply mx-auto max-w-4xl pt-3 flex-wrap gap-5 grid grid-cols-1 sm:grid-cols-2
+  @apply mx-auto max-w-4xl pt-3 pb-5 flex-wrap gap-5 grid grid-cols-1 sm:grid-cols-2
 }
 
 .tip-title{
   @apply text-xl
-}
-
-.tips-wrapper{
-  @apply flex border border-[#1B4965] rounded-xl bg-[#DBF0FF] max-w-lg basis-1/2
 }
 
 .tip-icon{
@@ -66,3 +66,18 @@
 .tip-text{
   @apply p-2 text-[#1B4965]
 }
+
+/* call too action  */
+.cta-card{
+  @apply w-full border-2 border-[#1B4965] p-4 rounded-xl text-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300;
+}
+.cta-wrapper{
+  @apply mx-auto max-w-4xl rounded-2xl p-5 pt-3
+}
+
+.cta-layout{
+  @apply gap-6 mt-5 grid grid-cols-1 sm:grid-cols-2
+}
+
+/* grid buat nampilin konten per kolom
+w-full buat responsivitas dibarengin sama max-w */

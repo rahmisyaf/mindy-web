@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.cta-button{
+  @apply mt-2 cursor-pointer justify-center w-full border rounded-xl bg-[#DBF0FF] text-lg text-[#1B4965] hover:bg-[#1B4965] hover:text-white duration-300
+}
