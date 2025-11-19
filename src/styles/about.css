@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.about-wrapper{
+  @apply px-3 lg:px-20
+}
+
+.hero-wrapper{
+  @apply grid place-content-center justify-items-center mt-20 ml-7 mr-7
+}
+
+.image{
+  @apply h-30 w-30 mb-5
+}
+
+.why-mindy-exists{
+  @apply  text-[#1B4965] text-justify mt-2
+}
+
+.values-wrapper{
+  @apply flex border border-none rounded-xl bg-[#E9E9E9] max-w-lg basis-1/2
+}
+
+.value-icon{
+  @apply bg-[#DBF0FF] rounded-xl w-12 h-12 flex shrink-0
+}
+
+.value-title{
+  @apply text-xl
+}
+
+.value-text{
+  @apply p-2 text-[#1B4965]
+}

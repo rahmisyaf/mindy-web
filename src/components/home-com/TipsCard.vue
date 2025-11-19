@@ -1,5 +1,5 @@
 <script setup>
-  import '../../style.css'
+  import '../../styles/home.css'
   defineProps({
     imgUrl: String,
     tipText: String
