@@ -19,12 +19,18 @@
       </div>
     </Card>
     <br>
-    <h1>Our Values</h1>
-    <ValueCard imgUrl="../icons/about/love.png" valueTitle="Care" valueText="We believe mental health is just as important as physical health"/>
-    <Card bg="bg-[#FBE6E6]">
-      <p class="text-center text-xl">🩵 Important Note</p>
-      <p class="text-center">MindCare is a self-care companion, not a substitute for professional counseling or therapy. If you’re struggling with serious mental health concerns, please reach out to a qualified mental health professional.</p>
-    </Card>
+    <h1 class="our-values">Our Values</h1>
+    <div class="main-values-wrapper">
+      <ValueCard imgUrl="../icons/about/love.png" valueTitle="Care" valueText="We believe mental health is just as important as physical health"/>
+      <ValueCard imgUrl="../icons/about/shield.png" valueTitle="Privacy" valueText="Your journal entries and mood data are securely and privately stored"/>
+      <ValueCard imgUrl="../icons/about/goal.png" valueTitle="Purpose" valueText="We aim to help you understand and manage your emotions more mindfully"/>
+      <ValueCard imgUrl="../icons/about/people.png" valueTitle="Support" valueText="We provide tools to accompany you on your mental wellness journey"/>
+    </div>
+    <br>
+      <Card bg="bg-[#FBE6E6]">
+        <p class="text-center text-xl">🩵 Important Note</p>
+        <p class="text-center">MindCare is a self-care companion, not a substitute for professional counseling or therapy. If you’re struggling with serious mental health concerns, please reach out to a qualified mental health professional.</p>
+      </Card>
   </div>
   <Footer/>
 </template>

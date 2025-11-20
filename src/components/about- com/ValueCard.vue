@@ -11,9 +11,11 @@
   <div class="values-wrapper group transition-all duration-300 
           hover:shadow-xl hover:scale-105">
     <div class="value-icon">
-      <img :src="imgUrl" class="h-8 w-8">
+      <img :src="imgUrl">
     </div>
-    <p class="value-title">{{ valueTitle }}</p>
-    <p class="value-text">{{ valueText }}</p>
+    <div>
+      <p class="value-title">{{ valueTitle }}</p>
+      <p class="value-text">{{ valueText }}</p>
+    </div>
   </div>
 </template>
