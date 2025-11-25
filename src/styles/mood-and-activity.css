@@ -1,23 +1,36 @@
 @import "tailwindcss";
 
+/*MoodActivity*/
 .page-wrapper{
-  @apply flex flex-col items-center pt-20 
+  @apply flex flex-col items-center  
+}
+
+.hero-wrapper{
+  @apply grid place-content-center justify-items-center ml-7 mr-7
 }
 .moods-wrapper{
   @apply flex gap-10
 }
 
+/*MoodButton*/
 .mood-button-left{
-  @apply w-32 h-32 -rotate-5 flex flex-col items-center justify-center cursor-pointer;
+  @apply w-28 h-28 -rotate-5 flex flex-col items-center justify-center cursor-pointer;
   @apply bg-white mx-auto border-[1.5px] border-[#1B4965] rounded-2xl; 
-  @apply text-center text-xl text-[#1B4965];
+  @apply text-center text-lg text-[#1B4965];
+  @apply hover:shadow-xl hover:scale-115 hover:rotate-0 transition-shadow duration-300
+}
+
+.mood-button-left:active{
+  @apply w-28 h-28 -rotate-5 flex flex-col items-center justify-center cursor-pointer;
+  @apply bg-white mx-auto border-2 border-[#1B4965] rounded-2xl; 
+  @apply text-center text-lg text-[#1B4965];
   @apply hover:shadow-xl hover:scale-115 hover:rotate-0 transition-shadow duration-300
 }
 
 .mood-button-right{
-  @apply w-32 h-32 rotate-5 flex flex-col items-center justify-center cursor-pointer;
+  @apply w-28 h-28 rotate-5 flex flex-col items-center justify-center cursor-pointer;
   @apply bg-white mx-auto border-[1.5px] border-[#1B4965] rounded-2xl; 
-  @apply text-center text-xl text-[#1B4965];
+  @apply text-center text-lg text-[#1B4965];
   @apply hover:shadow-xl hover:scale-115 hover:rotate-0 transition-shadow duration-300
 }
 
@@ -32,3 +45,16 @@
 /* mood-text{
   @apply text-center text-2xl
 } */
+
+/*ActivityCard*/
+.activity-card{
+  @apply h-44 w-90 flex flex-col gap-3 items-center justify-center;
+  @apply bg-white mx-auto border-2 border-[#1B4965] rounded-2xl; 
+  @apply text-center text-lg text-[#1B4965];
+  @apply hover:shadow-xl transition-shadow duration-300
+}
+
+/*activities*/
+.activities-wrapper{
+  @apply mx-auto max-w-4xl gap-5 grid grid-cols-1 sm:grid-cols-2
+}
