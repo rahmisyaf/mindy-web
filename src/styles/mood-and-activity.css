@@ -55,6 +55,19 @@
 }
 
 /*activities*/
+
+.message-and-activities-wrapper{
+  @apply mt-10 ml-7 mr-7
+}
 .activities-wrapper{
-  @apply mx-auto max-w-4xl gap-5 grid grid-cols-1 sm:grid-cols-2
+  @apply mt-5 mx-auto max-w-5xl gap-5 grid grid-cols-1 sm:grid-cols-2
+}
+
+/*MoodMessage*/
+.mood-message{
+  @apply flex-col gap-3
+}
+
+.icon-and-text{
+  @apply flex gap-3 items-center 
 }

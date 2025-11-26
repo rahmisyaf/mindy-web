@@ -13,7 +13,7 @@
       <div class="why-mindy-exists">
         <p>In the midst of modern life's busyness, we often forget to care for our emotional well-being. Stress, anxiety, and complex feelings can build up without us realizing it.</p>
         <br>
-        <p>Mindy is here as your virtual companion — helping you become more aware of your emotions. Through journaling, you can express your thoughts and feelings freely, without fear of being judged. Through mood tracking, you can recognize your emotional patterns and receive activity recommendations to help you feel better.</p>
+        <p>Mindy is here as your virtual companion — helping you become more aware of your emotions. Through journaling, you can express your thoughts and feelings freely, without fear of being judged.Through mood tracking, you can recognize your emotional patterns and receive activity recommendations to help you feel better.</p>
         <br>
         <p>We believe that small daily steps can lead to meaningful, long-term improvements in mental health. Mindy is your safe space to begin that journey.</p>
       </div>
