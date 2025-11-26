@@ -44,9 +44,9 @@
 <template>
   <nav class="navbar-container">
     <!--Desktop-->
-    <div class="hidden sm:flex items-center justify-between px-8 py-3">
+    <div class="desktop-navbar-container">
       <div class="flex items-center gap-2">
-        <img src="../assets/images/mindy-logo.png" class="h-9 w-35">
+        <img src="../assets/images/mindy-logo.png" class="size-30">
       </div>
       
       <div class="flex gap-6">
@@ -54,7 +54,7 @@
           v-for="item in menuItems"
           :key="item.name"
           :to="item.path"
-          :class="['rounded-full cursor-pointer transition', 
+          :class="['navbar-active', 
           activeItem === item.name ? 
           'bg-[#1A3A5F] text-white!' : 'text-gray-450 hover:bg-[#C5E4FA]']"
       > {{ item.name }}</router-link>
@@ -73,7 +73,7 @@
       <!--Logo mobile-->
       <div class="flex-1 flex justify-center">
         <div class="flex items-center">
-          <img src="../assets/images/mindy-logo.png" class="h-9 w-32">
+          <img src="../assets/images/mindy-logo.png" class="size-30">
         </div>
       </div>
     </div>
@@ -81,17 +81,18 @@
     <!--mobile sidebar-->
     <div class="mobile-sidebar" 
     :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
-      <ul class="mt-20 flex flex-col items-center">
+      <ul class="mobile-menu">
         <li
           v-for="item in menuItems"
           :key="item.name"
+          class="w-full"
         > 
 
           <router-link
             :to="item.path"
             @click="() => closeMenu()"
-            :class="['w-3/4 text-center py-3 rounded-full mb-3 cursor-pointer transition',
-            activeItem === item.name ? 'bg-[#1A3A5F] text-white' : 'text-gray-450 hover:bg-[#C5E4FA]'
+            :class="['mobile-navbar-container',
+            activeItem === item.name ? 'bg-[#1A3A5F] text-white!' : 'text-gray-450 hover:bg-[#C5E4FA]'
           ]">
             {{ item.name }}
           </router-link>

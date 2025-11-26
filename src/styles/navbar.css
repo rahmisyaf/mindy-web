@@ -18,5 +18,24 @@
 }
 
 .mobile-sidebar{
-  @apply fixed top-5 left-0 h-screen w-64 bg-[#DBF0FF] shadow-lg transform transition-transform duration-300 z-50 sm:hidden;
+  @apply fixed top-0 left-0 h-screen w-64 bg-[#DBF0FF] shadow-lg transform transition-transform duration-300 z-50 sm:hidden;
+}
+
+.desktop-navbar-container{
+  @apply hidden sm:flex items-center justify-between px-8 py-3
+}
+
+.mobile-navbar-container{
+  /* @apply text-center rounded-full mb-3 cursor-pointer transition pl-15 pr-15 pt-1 pb-1; */
+  @apply w-10/12;
+  @apply mx-auto;
+  @apply block text-center rounded-full mb-3 cursor-pointer transition py-3;
+}
+
+.mobile-menu{
+  @apply mt-20 flex flex-col items-center 
+}
+
+.navbar-active{
+  @apply rounded-full cursor-pointer transition pl-3 pr-3 pt-1 pb-1 text-lg;
 }

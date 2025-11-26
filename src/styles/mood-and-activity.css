@@ -9,7 +9,9 @@
   @apply grid place-content-center justify-items-center ml-7 mr-7
 }
 .moods-wrapper{
-  @apply flex gap-10
+  @apply grid grid-cols-2 gap-10;
+  @apply md:flex ;
+  @apply justify-items-center justify-center mt-5
 }
 
 /*MoodButton*/
@@ -20,11 +22,12 @@
   @apply hover:shadow-xl hover:scale-115 hover:rotate-0 transition-shadow duration-300
 }
 
-.mood-button-left:active{
-  @apply w-28 h-28 -rotate-5 flex flex-col items-center justify-center cursor-pointer;
-  @apply bg-white mx-auto border-2 border-[#1B4965] rounded-2xl; 
-  @apply text-center text-lg text-[#1B4965];
-  @apply hover:shadow-xl hover:scale-115 hover:rotate-0 transition-shadow duration-300
+.mood-button-left.is-active{
+  @apply border-3 scale-115 shadow-xl rotate-0
+}
+
+.mood-button-right.is-active{
+  @apply border-3 scale-115 shadow-xl rotate-0
 }
 
 .mood-button-right{
@@ -48,10 +51,11 @@
 
 /*ActivityCard*/
 .activity-card{
-  @apply h-60 w-96 flex flex-col gap-2 items-center justify-center;
+  @apply w-11/12 h-auto min-h-[12rem] sm:w-96 sm:h-60;
+  @apply p-6 flex flex-col gap-2 items-center justify-center;
+  @apply text-center text-base sm:text-lg text-[#1B4965];
   @apply bg-white mx-auto border-2 border-[#1B4965] rounded-2xl; 
-  @apply text-center text-lg text-[#1B4965];
-  @apply hover:shadow-xl transition-shadow duration-300
+  @apply hover:shadow-xl transition-shadow duration-300;
 }
 
 /*activities*/
