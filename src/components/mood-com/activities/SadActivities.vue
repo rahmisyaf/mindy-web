@@ -5,12 +5,12 @@
 
 <template>
   <div class="message-and-activities-wrapper">
-    <MoodMessage imgUrl="/icons/mood/happy.png" iconColor="bg-[#5996BA]" message="You're feeling happy!" />
+    <MoodMessage imgUrl="/icons/mood/sad.png" iconColor="bg-[#71A8EA]" message="No... you're feeling sad..." />
     <div class="activities-wrapper">
-      <ActivityCard imgUrl="/icons/mood/happy-activities/sharejoy.jpeg" description="Share your joy with loved ones."/>
-      <ActivityCard imgUrl="/icons/mood/happy-activities/handwrite.jpg" description="Capture your happy moments in your journal."/>
-      <ActivityCard imgUrl="/icons/mood/happy-activities/music.png" description="Enjoy your favorite music."/>
-      <ActivityCard imgUrl="/icons/mood/happy-activities/reward.png" description="Treat yourself with a small reward."/>
+      <ActivityCard imgUrl="/icons/mood/sad-activities/calling.png" description="Talk to someone you trust."/>
+      <ActivityCard imgUrl="/icons/mood/sad-activities/handwrite.jpg" description="Write down your feelings in a journal."/>
+      <ActivityCard imgUrl="/icons/mood/sad-activities/music.png" description="Listen to uplifting music."/>
+      <ActivityCard imgUrl="/icons/mood/sad-activities/validate.png" description="Give yourself permission to feel what you feel."/>
     </div>
   </div>
 </template>

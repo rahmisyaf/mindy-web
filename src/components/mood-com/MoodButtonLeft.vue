@@ -1,5 +1,5 @@
 <script setup>
-  import { ref } from 'process'
+  import { ref } from 'vue'
 import '../../styles/mood-and-activity.css'
   defineProps({
     imgUrl: String,
