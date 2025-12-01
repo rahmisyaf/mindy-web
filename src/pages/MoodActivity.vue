@@ -25,7 +25,7 @@
 </script>
 
 <template>
-  <div class="page-wrapper">
+  <div class="page-wrapper-mood">
     <Hero/>
     <div class="moods-wrapper">
       <MoodButtonLeft bgColor="bg-[#5996BA]" imgUrl="/icons/mood/happy.png" moodName="Happy" @click="handleMoodSelection('Happy')" :isActive="selectedMood === 'Happy'"/>

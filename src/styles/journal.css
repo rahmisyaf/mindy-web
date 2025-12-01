@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+.page-wrapper{
+  @apply mt-25 max-w-5xl items-start;
+  @apply ml-7 mr-7;
+  @apply lg:ml-20 lg:mr-20;
+}
+
+.header-container{
+  @apply flex flex-col items-start w-full lg:gap-120;
+  @apply md:flex-row md:justify-between gap-5
+}
+
+.book-icon{
+  @apply size-13 p-2 -rotate-15
+}
+.icon-wrapper{
+  @apply rounded-full bg-[#1B4965] size-13
+}
+
+.add-journal-button{
+  @apply border border-[#5996BA] bg-[#DBF0FF] text-[#5996BA] text-lg rounded-2xl p-1.5;
+  @apply hover:bg-[#5996BA] hover:text-white hover:cursor-pointer
+}

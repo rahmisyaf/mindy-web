@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+.page-wrapper-edu{
+  @apply items-center mt-20
+}
+
+.hero-wrapper-education{
+  @apply items-center flex flex-col gap-3 text-center
+}
+
+.book-icon-edu{
+  @apply size-20 p-3
+}
+
+.icon-wrapper-edu{
+  @apply rounded-full bg-[#1B4965] size-20
+}

@@ -4,6 +4,7 @@ import Home from '../pages/Home.vue'
 import MoodActivity from '../pages/MoodActivity.vue'
 import Journal from '../pages/Journal.vue'
 import Education from '../pages/Education.vue'
+import ArticleDetail from '../pages/ArticleDetail.vue'
 import About from '../pages/About.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -11,6 +12,7 @@ const routes: Array<RouteRecordRaw> = [
   {path: '/mood-activity', name: 'MoodActivity', component: MoodActivity},
   {path: '/journal', name: 'Journal', component: Journal},
   {path: '/education', name: 'Education', component: Education},
+  { path: '/education/:id', name: 'ArticleDetail', component: ArticleDetail },
   {path: '/about', name: 'About', component: About}
 ]
 

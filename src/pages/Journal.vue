@@ -1,8 +1,11 @@
 <script setup>
+  import Header from '../components/journal-com/Header.vue';
   import Footer from '../components/Footer.vue';
 </script>
 
 <template>
-  <h1>ini journal</h1>
+  <div class="page-wrapper">
+    <Header/>
+  </div>
   <Footer/>
 </template>

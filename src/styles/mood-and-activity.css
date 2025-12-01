@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*MoodActivity*/
-.page-wrapper{
+.page-wrapper-mood{
   @apply flex flex-col items-center  
 }
 

@@ -1,8 +1,11 @@
 <script setup>
+  import Hero from '../components/education-com/Hero.vue';
   import Footer from '../components/Footer.vue';
 </script>
 
 <template>
-  <h1>ini education</h1>
+  <div class="page-wrapper-edu">
+    <Hero/>
+  </div>
   <Footer/>
 </template>
