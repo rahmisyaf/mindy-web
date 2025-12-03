@@ -9,6 +9,14 @@
   function AddJournal() {
     showWritingCard.value = true
   }
+
+  const emit = defineEmits(['add-new-entry']);
+
+  function onDataReceived (dataFromWritingCard){
+    emit('add-new-entry', dataFromWritingCard);
+
+    showWritingCard.value = false;
+  }
 </script>
 
 <template>
@@ -24,5 +32,5 @@
     </div>
     <AddJournalButton @click="AddJournal()"/>
   </div>
-  <WritingCard v-if="showWritingCard" @close="showWritingCard = false"/>
+  <WritingCard v-if="showWritingCard" @close="showWritingCard = false" @submit-data="onDataReceived"/>
 </template>

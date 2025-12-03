@@ -8,10 +8,28 @@ import {ref} from 'vue';
   import SaveButton from './small-com/SaveButton.vue';
 
   const moods = ["happy", "calm", "neutral", "anxious", "sad", "energetic"];
-
+  
+  const emit = defineEmits(['submit-data','close']);
+  
   const currentMood = ref('');
+  const title = ref('');
+  const content = ref('');
 
-  const emit = defineEmits(['close']);
+  function handleSave(){
+    // if(!title.value || !content.value) return;
+
+    const newData = {
+      id: Date.now(),
+      title: title.value,
+      content: content.value,
+      mood: currentMood.value,
+      date: new Date().toLocaleDateString()
+    };
+
+    emit('submit-data', newData);
+
+    emit('close');
+  }
 
   function handleClose(){
     emit('close');
@@ -40,7 +58,7 @@ import {ref} from 'vue';
     </div>
     <div class="flex justify-center gap-10">
       <CancelButton @click="handleClose"/>
-      <SaveButton/>
+      <SaveButton @click="handleSave"/>
     </div>
   </Card>
 </template>
