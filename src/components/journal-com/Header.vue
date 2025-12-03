@@ -1,6 +1,14 @@
 <script setup>
+  import { ref } from 'vue';
   import '../../styles/journal.css';
   import AddJournalButton from './AddJournalButton.vue';
+  import WritingCard from './WritingCard.vue';
+
+  const showWritingCard = ref(false);
+
+  function AddJournal() {
+    showWritingCard.value = true
+  }
 </script>
 
 <template>
@@ -14,6 +22,7 @@
         <p class="text-[#1B4965] text-xl">Express your thoughts and emotions</p>
       </div>
     </div>
-    <AddJournalButton/>
+    <AddJournalButton @click="AddJournal()"/>
   </div>
+  <WritingCard v-if="showWritingCard" @close="showWritingCard = false"/>
 </template>

@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
 .page-wrapper{
-  @apply mt-25 max-w-5xl items-start;
-  @apply ml-7 mr-7;
-  @apply lg:ml-20 lg:mr-20;
+  @apply mt-25 max-w-4xl flex flex-col gap-3;
+  @apply mx-auto;
+  @apply px-7 lg:px-20;
 }
 
 .header-container{
@@ -21,4 +21,30 @@
 .add-journal-button{
   @apply border border-[#5996BA] bg-[#DBF0FF] text-[#5996BA] text-lg rounded-2xl p-1.5;
   @apply hover:bg-[#5996BA] hover:text-white hover:cursor-pointer
+}
+
+.input-field{
+  @apply bg-[#DBF0FF] text-[#1B4965] border-[0.5px] border-[#1B4965] rounded-xl w-full pl-2 focus:outline-none focus:ring-1
+}
+
+.button-mood{
+  @apply bg-[#DBF0FF] border-[0.5px] border-[#1B4965] text-lg text-[#1B4965] rounded-full pr-2 pl-2 w-fit cursor-pointer;
+  @apply hover:bg-[#73B5DD] hover:text-white hover:border-[#73B5DD];
+}
+
+.button-mood.is-selected{
+  @apply bg-[#73B5DD] text-white border-[#73B5DD];
+}
+
+.moods-button-wrapper{
+  @apply flex flex-wrap gap-3 max-w-3xl basis-1/2
+}
+
+.cancel-button{
+  @apply bg-[#73B5DD] text-lg text-white text-center border-[0.5px] border-[#73B5DD] rounded-full w-25 cursor-pointer;
+}
+
+.save-button{
+  @apply bg-[#DBF0FF] border-[0.5px] border-[#1B4965] text-lg text-center text-[#1B4965] rounded-full w-25 cursor-pointer;
+  @apply hover:bg-[#1B4965] hover:text-white
 }
