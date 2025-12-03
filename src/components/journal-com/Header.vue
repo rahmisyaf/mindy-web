@@ -15,7 +15,7 @@
   function onDataReceived (dataFromWritingCard){
     emit('add-new-entry', dataFromWritingCard);
 
-    showWritingCard.value = false;
+    // showWritingCard.value = false;
   }
 </script>
 

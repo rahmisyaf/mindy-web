@@ -6,6 +6,7 @@ import {ref} from 'vue';
   import ButtonMood from './small-com/ButtonMood.vue';
   import CancelButton from './small-com/CancelButton.vue';
   import SaveButton from './small-com/SaveButton.vue';
+  import SuccessModal from './SuccessModal.vue';
 
   const moods = ["happy", "calm", "neutral", "anxious", "sad", "energetic"];
   
@@ -15,8 +16,16 @@ import {ref} from 'vue';
   const title = ref('');
   const content = ref('');
 
+  const showSuccess = ref(false);
+
   function handleSave(){
-    // if(!title.value || !content.value) return;
+    if(!title.value || !currentMood.value || !content.value) {
+      alert("please complete your journal :)");
+      return;
+    };
+
+    console.log("title: ", title.value);
+    console.log("content: ", content.value);
 
     const newData = {
       id: Date.now(),
@@ -28,9 +37,14 @@ import {ref} from 'vue';
 
     emit('submit-data', newData);
 
-    emit('close');
+    showSuccess.value = true;
+
   }
 
+  function closeAll(){
+    showSuccess.value = false;
+    emit('close');
+  }
   function handleClose(){
     emit('close');
   }
@@ -44,7 +58,7 @@ import {ref} from 'vue';
     </div>
     <div class="flex flex-col gap-2">
       <p class="text-[#5FA8D3] text-xl">Title</p>
-      <InputField height="h-8" name="title" placeholder="Give the title of your journal..." />
+      <InputField height="h-8" name="title" v-model="title" placeholder="Give the title of your journal..." />
     </div>
     <div class="flex flex-col gap-2">
       <p class="text-[#5FA8D3] text-xl">How are you feeling today?</p>
@@ -54,11 +68,14 @@ import {ref} from 'vue';
     </div>
     <div class="flex flex-col gap-2">
       <p class="text-[#5FA8D3] text-xl">Write your journal</p>
-      <InputField height="h-30" name="title" placeholder="Share everything that comes to your mind..." />
+      <InputField height="h-30" name="content" v-model="content" placeholder="Share everything that comes to your mind..." />
     </div>
     <div class="flex justify-center gap-10">
       <CancelButton @click="handleClose"/>
       <SaveButton @click="handleSave"/>
     </div>
+    <Teleport to="body">
+      <SuccessModal v-if="showSuccess" @close="closeAll"/>
+    </Teleport>
   </Card>
 </template>

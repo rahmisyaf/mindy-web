@@ -3,11 +3,14 @@
     import Card from '../Card.vue';
 
     defineProps({
+      id: Number,
       title: String,
       content: String,
       mood: String,
       date: String
-    })
+    });
+
+    defineEmits(['delete-journal'])
   </script>
 
   <template>
@@ -20,7 +23,9 @@
           </div>
         </div>
         <div class="shrink-0">
-          <img src="/icons/journal/trash.png" class="size-6 cursor-pointer hover:opacity-75 transition">
+          <img src="/icons/journal/trash.png" 
+          class="size-6 cursor-pointer hover:opacity-75 transition"
+          @click="$emit('delete-journal', id)">
         </div>
       </div>
       <div class="flex gap-2">

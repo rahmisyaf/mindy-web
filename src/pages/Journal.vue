@@ -33,6 +33,12 @@
 
     console.log("ADD data success", journalList.value);
   }
+
+  function handleDelete(idDelete){
+    if (!confirm("Are you sure?")) return;
+
+    journalList.value = journalList.value.filter(item => item.id !== idDelete)
+  }
 </script>
 
 <template>
@@ -41,10 +47,12 @@
     <JournalCard
       v-for="item in journalList"
       :key="item.id"
+      :id="item.id"
       :title="item.title"
       :mood="item.mood"
       :content="item.content"
       :date="item.date"
+      @delete-journal="handleDelete"
     />
   </div>
   <Footer/>
