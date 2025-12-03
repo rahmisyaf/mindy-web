@@ -4,6 +4,7 @@
   import MoodButtonLeft from '../components/mood-com/MoodButtonLeft.vue';
   import MoodButtonRight from '../components/mood-com/MoodButtonRight.vue';
   import ActivityRecommendation from '../components/mood-com/ActivityRecommendation.vue';
+  import ChooseMood from '../components/mood-com/ChooseMood.vue';
   import Footer from '../components/Footer.vue';
 
   const selectedMood = ref(null)
@@ -38,6 +39,7 @@
     <div ref="recommendationRef">
       <ActivityRecommendation :moodName="selectedMood"/>
     </div>
+    <ChooseMood/>
   </div>
   <Footer/>
 </template>
