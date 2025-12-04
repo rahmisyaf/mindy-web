@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 
 .page-wrapper-edu{
-  @apply items-center mt-20
+  @apply items-center mt-20 max-w-4xl mx-auto
 }
 
 .hero-wrapper-education{
-  @apply items-center flex flex-col gap-3 text-center
+  @apply items-center flex flex-col gap-3 text-center mb-10
 }
 
 .book-icon-edu{
@@ -14,4 +14,14 @@
 
 .icon-wrapper-edu{
   @apply rounded-full bg-[#1B4965] size-20
+}
+
+.read-button{
+  @apply bg-[#73B5DD] border-[0.5px] border-[#1B4965] text-lg text-center text-[#1B4965] rounded-full w-25 cursor-pointer;
+  @apply hover:bg-[#1B4965] hover:text-white
+}
+
+.back-button{
+  @apply bg-[#DBF0FF] border-[0.5px] border-[#1B4965] text-lg text-center text-[#1B4965] rounded-full w-fit px-2 cursor-pointer mb-5;
+  @apply hover:bg-[#1B4965] hover:text-white
 }
