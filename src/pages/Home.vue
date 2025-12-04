@@ -13,7 +13,7 @@
   <div class="reminder-card-wrapper">
     <div class="reminder-card">
       <div class="clock-daily">
-        <img src="/mindy-web/icons/home/clock.png" class="w-7 h-7 pt-10">
+        <img :src="/mindy-web/icons/home/clock.png" class="w-7 h-7 pt-10">
         <h1 class="daily-reminder-text">Daily Reminder</h1>
       </div>
       <div class="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-27">
