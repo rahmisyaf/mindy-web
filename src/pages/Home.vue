@@ -18,17 +18,17 @@
       </div>
       <div class="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-27">
         <ReminderCard
-        imgUrl="/mindy-web/icons/home/sun.png"
+        :imgUrl="'/mindy-web/icons/home/sun.png'"
         time="Morning"
         description="Start your day with kind thoughts"
         />
         <ReminderCard
-        imgUrl="/mindy-web/icons/home/cup.png"
+        :imgUrl="'/mindy-web/icons/home/cup.png'"
         time="Afternoon"
         description="Pause for a moment and take a deep breath"
         />
         <ReminderCard
-        imgUrl="/mindy-web/icons/home/night.png"
+        :imgUrl="'/mindy-web/icons/home/night.png'"
         time="Night"
         description="Wind down and write about your day in your journal"
         />
