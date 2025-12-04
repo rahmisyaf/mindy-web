@@ -2,6 +2,7 @@
   import { articlesData } from '../data/articles';
   import Card from '../components/Card.vue';
   import BackButton from '../components/education-com/BackButton.vue';
+  import Footer from '../components/Footer.vue';
 
   import { useRoute } from 'vue-router';
   import { computed } from 'vue';
@@ -19,10 +20,11 @@
     <BackButton>
       <router-link to="/education">← Back to Articles</router-link>
     </BackButton>
-    <Card bg="bg-[#DBF0FF]" v-if="currentArticle">
+    <Card bg="bg-[#DBF0FF]" v-if="currentArticle" class="">
       <p class="text-2xl"> {{ currentArticle.title }}</p>
       <br>
       <p class="text-[#1B4965] text-justify"> {{ currentArticle.content }} </p>
     </Card>
   </div>
+  <Footer/>
 </template>

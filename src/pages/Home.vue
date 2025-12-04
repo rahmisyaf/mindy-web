@@ -13,22 +13,22 @@
   <div class="reminder-card-wrapper">
     <div class="reminder-card">
       <div class="clock-daily">
-        <img src="/icons/home/clock.png" class="w-7 h-7 pt-10">
+        <img src="/mindy-web/icons/home/clock.png" class="w-7 h-7 pt-10">
         <h1 class="daily-reminder-text">Daily Reminder</h1>
       </div>
       <div class="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-27">
         <ReminderCard
-        imgUrl="/icons/home/sun.png"
+        imgUrl="/mindy-web/icons/home/sun.png"
         time="Morning"
         description="Start your day with kind thoughts"
         />
         <ReminderCard
-        imgUrl="/icons/home/cup.png"
+        imgUrl="/mindy-web/icons/home/cup.png"
         time="Afternoon"
         description="Pause for a moment and take a deep breath"
         />
         <ReminderCard
-        imgUrl="/icons/home/night.png"
+        imgUrl="/mindy-web/icons/home/night.png"
         time="Night"
         description="Wind down and write about your day in your journal"
         />
@@ -43,19 +43,19 @@
       </div>
       <div class="tips">
         <TipsCard
-        imgUrl="/icons/home/breathe.png"
+        imgUrl="/mindy-web/icons/home/breathe.png"
         tipText="Spend a few minutes today just breathing deeply."
         />
         <TipsCard
-        imgUrl="/icons/home/walk.png"
+        imgUrl="/mindy-web/icons/home/walk.png"
         tipText="Step outside & let the fresh air clear your thoughts."
         />
         <TipsCard
-        imgUrl="/icons/home/love.png"
+        imgUrl="/mindy-web/icons/home/love.png"
         tipText="Write down 3 things you're grateful for."
         />
         <TipsCard
-        imgUrl="/icons/home/chat.png"
+        imgUrl="/mindy-web/icons/home/chat.png"
         tipText="Reach out to a friend or loved one."
         />
       </div>
@@ -69,14 +69,14 @@
     <div class="cta-layout">
       <CTA
       bgColor="#F3F0BE"
-      imgUrl="/icons/home/book.png"
+      imgUrl="/mindy-web/icons/home/book.png"
       title="Daily Journal"
       desc="Express your thoughts and emotions in your private journal."
       path="/journal">
       </CTA>
       <CTA
       bgColor="#FBE6E6"
-      imgUrl="/icons/home/love2.png"
+      imgUrl="/mindy-web/icons/home/love2.png"
       title="Mood Tracking"
       desc="Get activity recommendation based on your current mood."
       path="/mood-activity">

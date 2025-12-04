@@ -9,7 +9,7 @@
 <template>
   <div class="page-wrapper-edu">
     <Hero/>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+    <div class="articles-wrapper">
       <ArticleCard 
         v-for="item in articlesData"
         :key="item.id"
