@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.about-me-wrapper{
+  @apply mt-20 ml-7 mr-7
+}
+
+.name{
+  @apply text-4xl
+}
+
+.nim{
+  @apply text-2xl
+}
+
+.skill-wrapper{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10
+}

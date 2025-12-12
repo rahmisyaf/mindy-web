@@ -6,6 +6,7 @@ import Journal from '../pages/Journal.vue'
 import Education from '../pages/Education.vue'
 import ArticleDetail from '../pages/ArticleDetail.vue'
 import About from '../pages/About.vue'
+import AboutMe from '../pages/AboutMe.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {path: '/', name: 'Home', component: Home},
@@ -13,7 +14,8 @@ const routes: Array<RouteRecordRaw> = [
   {path: '/journal', name: 'Journal', component: Journal},
   {path: '/education', name: 'Education', component: Education},
   { path: '/education/:id', name: 'ArticleDetail', component: ArticleDetail },
-  {path: '/about', name: 'About', component: About}
+  {path: '/about', name: 'About', component: About},
+  {path: '/about-me', name: 'AboutMe', component:AboutMe}
 ]
 
 const router = createRouter({

@@ -19,6 +19,7 @@
     { name: 'Journal', path: '/journal' },
     { name: 'Education', path: '/education' },
     { name: 'About', path: '/about' },
+    {name:'About Me', path:'/about-me'}
   ]
 
   const activeItem = computed(() => {
